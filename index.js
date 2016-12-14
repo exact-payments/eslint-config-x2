@@ -2,6 +2,13 @@
 
 
 const config = {
+  plugins: [
+    'node',
+    'unicorn',
+    'new-with-error',
+    'no-use-extend-native',
+  ],
+
   parserOptions: {
     ecmaVersion: 6,
   },
@@ -170,7 +177,7 @@ const config = {
     'keyword-spacing'              : ['error', { before: true, after: true }],
     'line-comment-position'        : 'off',
     'linebreak-style'              : ['error', 'unix'],
-    'lines-around-comment'         : ['error', { beforeBlockComment: true }],
+    'lines-around-comment'         : 'off',
     'lines-around-directive'       : 'off',
     'max-depth'                    : ['warn', 6],
     'max-len'                      : ['warn', { code: 100, tabWidth: 2, comments: 80, ignoreUrls: true }],
@@ -259,6 +266,35 @@ const config = {
     'symbol-description'     : 'error',
     'template-curly-spacing' : 'error',
     'yield-star-spacing'     : ['error', 'after'],
+
+    // Node Plugin
+    'node/exports-style'          : 'off',
+    'node/no-deprecated-api'      : 'warn',
+    'node/no-missing-import'      : 'error',
+    'node/no-missing-require'     : 'error',
+    'node/no-unpublished-bin'     : 'error',
+    'node/no-unpublished-import'  : 'error',
+    'node/no-unpublished-require' : 'error',
+    'node/no-unsupported-features': 'off',
+    'node/process-exit-as-throw'  : 'error',
+    'node/shebang'                : 'error',
+
+    // Unicorn Plugin
+    'unicorn/catch-error-name'         : ['error', { name: 'err' }],
+    'unicorn/explicit-length-check'    : 'error',
+    'unicorn/filename-case'            : ['error', { case: 'kebabCase' }],
+    'unicorn/no-abusive-eslint-disable': 'error',
+    'unicorn/no-process-exit'          : 'off',
+    'unicorn/throw-new-error'          : 'error',
+    // 'unicorn/number-literal-case'      : 'error', // FIXME: Not yet released
+    // 'unicorn/escape-case'              : 'error', // FIXME: Not yet released
+    // 'unicorn/no-array-instanceof'      : 'error', // FIXME: Not yet released
+    // 'unicorn/no-new-buffer'            : 'error', // FIXME: Not yet released
+    'unicorn/no-hex-escape'            : 'off',
+    // 'unicorn/custom-error-definition'  : 'error', // FIXME: Not yet released
+
+    // No Use Extend Native Plugin
+    'no-use-extend-native/no-use-extend-native': 'error',
   },
 };
 
