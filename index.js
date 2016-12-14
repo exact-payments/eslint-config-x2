@@ -282,7 +282,7 @@ const config = {
     // Unicorn Plugin
     'unicorn/catch-error-name'         : ['error', { name: 'err' }],
     'unicorn/explicit-length-check'    : 'error',
-    'unicorn/filename-case'            : ['error', { case: 'kebabCase' }],
+    'unicorn/filename-case'            : 'off',
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit'          : 'off',
     'unicorn/throw-new-error'          : 'error',
