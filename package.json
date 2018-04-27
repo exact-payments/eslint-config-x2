@@ -6,10 +6,10 @@
   "author": "Robert Hurst<rhurst@fintechdev.net>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^4.14.0"
+    "eslint": "^4.6.1"
   },
   "dependencies": {
-    "eslint": "^4.14.0",
+    "eslint": "^4.6.1",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-node": "^5.2.1",
