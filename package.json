@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-x2",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "eslint plugin for the X2 project",
   "main": "index.js",
   "author": "Robert Hurst<rhurst@fintechdev.net>",
